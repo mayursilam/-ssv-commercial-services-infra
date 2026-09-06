@@ -15,10 +15,10 @@ export const Logo: React.FC<LogoProps> = ({
   alt = 'SSV Commercial Services & Infra Private Limited',
   id,
 }) => {
-  // Official PNG asset paths
+  // Approved SVG asset paths
   const logoSrc = variant === 'stacked'
-    ? '/assets/images/logo/ssv-logo-stacked.png'
-    : '/assets/images/logo/ssv-logo-horizontal.png';
+    ? './assets/images/logo/ssv-logo-stacked.svg'
+    : './assets/images/logo/ssv-logo-horizontal.svg';
 
   const defaultWidthClass = variant === 'stacked'
     ? 'w-[160px] sm:w-[190px]'
