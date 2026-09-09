@@ -203,15 +203,22 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         </div>
       </section>
 
-      {/* Corporate Office */}
+      {/* Corporate Offices */}
       <section className="py-16 bg-[#000E1A] text-white border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-widest text-[#C0122A]">HEAD OFFICE</span>
-            <h3 className="text-2xl font-bold font-gotham text-white mt-1">Dharashiv, Maharashtra</h3>
-            <p className="text-xs text-slate-400 mt-1">{COMPANY_INFO.address.line1}, {COMPANY_INFO.address.line2}</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#C0122A]">HEAD OFFICE</span>
+              <h3 className="text-2xl font-bold font-gotham text-white mt-1">Dharashiv, Maharashtra</h3>
+              <p className="text-xs text-slate-400 mt-1">{COMPANY_INFO.headOffice.formatted}</p>
+            </div>
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#C0122A]">PUNE OFFICE</span>
+              <h3 className="text-2xl font-bold font-gotham text-white mt-1">Pune, Maharashtra</h3>
+              <p className="text-xs text-slate-400 mt-1">{COMPANY_INFO.puneOffice.formatted}</p>
+            </div>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-shrink-0">
             <a
               href={`tel:${COMPANY_INFO.phoneRaw}`}
               className="px-6 py-3 bg-[#C0122A] hover:bg-[#9E0E22] text-white text-xs font-bold uppercase tracking-wider rounded-sm transition-colors"

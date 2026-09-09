@@ -214,19 +214,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-white text-xs font-black tracking-widest uppercase border-b border-[#0F3759] pb-2 flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-[#C0122A]" />
-              Headquarters
+              Office Locations
             </h4>
-            <div className="space-y-3.5 text-xs text-slate-300">
+            <div className="space-y-3 text-xs text-slate-300">
               <div className="flex items-start gap-3">
                 <MapPinIcon size={16} color="#C0122A" className="flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-white">{COMPANY_INFO.address.line1}</p>
-                  <p className="text-slate-400">{COMPANY_INFO.address.line2}</p>
-                  <p className="text-slate-400">{COMPANY_INFO.address.state} - {COMPANY_INFO.address.pincode}, {COMPANY_INFO.address.country}</p>
+                  <div className="text-[11px] font-bold text-[#C0122A] uppercase tracking-wider">Head Office</div>
+                  <p className="font-semibold text-white">{COMPANY_INFO.headOffice.line1}</p>
+                  <p className="text-slate-400">{COMPANY_INFO.headOffice.line2}</p>
+                  <p className="text-slate-400">{COMPANY_INFO.headOffice.state} - {COMPANY_INFO.headOffice.pincode}, {COMPANY_INFO.headOffice.country}</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-start gap-3 pt-1 border-t border-[#0F3759]/40">
+                <MapPinIcon size={16} color="#C0122A" className="flex-shrink-0 mt-0.5" />
+                <div>
+                  <div className="text-[11px] font-bold text-[#C0122A] uppercase tracking-wider">Pune Office</div>
+                  <p className="text-slate-300 leading-snug">{COMPANY_INFO.puneOffice.formatted}</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 pt-2 border-t border-[#0F3759]/60">
                 <PhoneIcon size={16} color="#C0122A" className="flex-shrink-0" />
                 <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-white font-semibold transition-colors">
                   {COMPANY_INFO.phone}

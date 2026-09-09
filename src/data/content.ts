@@ -36,12 +36,58 @@ export const COMPANY_INFO = {
   whatsappUrl: 'https://wa.me/919359072600',
   email: 'ssvsecservices@gmail.com',
   address: {
+    label: 'Head Office',
     line1: 'Chhatrapati Sambhaji Maharaj Nagar',
     line2: 'Behind DIC Office, Dharashiv',
     state: 'Maharashtra',
     pincode: '413501',
-    country: 'India'
+    country: 'India',
+    formatted: 'Chhatrapati Sambhaji Maharaj Nagar, Behind DIC Office, Dharashiv, Maharashtra 413501, India'
   },
+  headOffice: {
+    label: 'Head Office',
+    line1: 'Chhatrapati Sambhaji Maharaj Nagar',
+    line2: 'Behind DIC Office, Dharashiv',
+    city: 'Dharashiv',
+    state: 'Maharashtra',
+    pincode: '413501',
+    country: 'India',
+    formatted: 'Chhatrapati Sambhaji Maharaj Nagar, Behind DIC Office, Dharashiv, Maharashtra 413501, India'
+  },
+  puneOffice: {
+    label: 'Pune Office',
+    line1: '4th Floor, Tanna Tower, Law College Road',
+    line2: 'Erandwane, Pune',
+    city: 'Pune',
+    state: 'Maharashtra',
+    pincode: '411004',
+    country: 'India',
+    formatted: '4th Floor, Tanna Tower, Law College Road, Erandwane, Pune – 411004, Maharashtra, India.'
+  },
+  offices: [
+    {
+      id: 'head-office',
+      label: 'Head Office',
+      line1: 'Chhatrapati Sambhaji Maharaj Nagar',
+      line2: 'Behind DIC Office, Dharashiv',
+      city: 'Dharashiv',
+      state: 'Maharashtra',
+      pincode: '413501',
+      country: 'India',
+      formatted: 'Chhatrapati Sambhaji Maharaj Nagar, Behind DIC Office, Dharashiv, Maharashtra 413501, India'
+    },
+    {
+      id: 'pune-office',
+      label: 'Pune Office',
+      line1: '4th Floor, Tanna Tower, Law College Road',
+      line2: 'Erandwane, Pune',
+      city: 'Pune',
+      state: 'Maharashtra',
+      pincode: '411004',
+      country: 'India',
+      formatted: '4th Floor, Tanna Tower, Law College Road, Erandwane, Pune – 411004, Maharashtra, India.'
+    }
+  ],
   hours: 'Operational Support & Inquiry Line',
   colors: {
     red: '#C0122A',

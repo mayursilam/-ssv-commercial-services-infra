@@ -861,23 +861,36 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          {/* Location & Headquarters Bar */}
-          <div className="p-6 sm:p-8 bg-[#001423] border border-[#0F3759] rounded-sm flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-4 text-left">
-              <div className="w-12 h-12 rounded-full bg-[#C0122A]/20 flex items-center justify-center flex-shrink-0">
-                <MapPinIcon size={22} color="#C0122A" />
+          {/* Location & Offices Bar */}
+          <div className="p-6 sm:p-8 bg-[#001423] border border-[#0F3759] rounded-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1 text-left">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#C0122A]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <MapPinIcon size={20} color="#C0122A" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-[#C0122A] uppercase tracking-wider">Head Office</div>
+                  <div className="text-sm font-bold text-white mt-0.5">{COMPANY_INFO.headOffice.line1}, {COMPANY_INFO.headOffice.line2}</div>
+                  <div className="text-xs text-slate-400">{COMPANY_INFO.headOffice.state} - {COMPANY_INFO.headOffice.pincode}, {COMPANY_INFO.headOffice.country} (Dharashiv, Maharashtra)</div>
+                </div>
               </div>
-              <div>
-                <div className="text-xs font-bold text-[#C0122A] uppercase tracking-wider">Head Office</div>
-                <div className="text-sm font-bold text-white mt-0.5">{COMPANY_INFO.address.line1}, {COMPANY_INFO.address.line2}</div>
-                <div className="text-xs text-slate-400">{COMPANY_INFO.address.state} - {COMPANY_INFO.address.pincode}, {COMPANY_INFO.address.country} (Dharashiv, Maharashtra)</div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-[#C0122A]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <MapPinIcon size={20} color="#C0122A" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-[#C0122A] uppercase tracking-wider">Pune Office</div>
+                  <div className="text-sm font-bold text-white mt-0.5">4th Floor, Tanna Tower, Law College Road</div>
+                  <div className="text-xs text-slate-400">Erandwane, Pune – 411004, Maharashtra, India.</div>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 flex-shrink-0">
               <button
                 onClick={() => onNavigate('contact')}
-                className="px-6 py-3.5 bg-[#C0122A] hover:bg-[#9E0E22] text-white text-xs font-bold uppercase tracking-widest rounded-sm transition-colors shadow-md flex items-center gap-2"
+                className="w-full sm:w-auto px-6 py-3.5 bg-[#C0122A] hover:bg-[#9E0E22] text-white text-xs font-bold uppercase tracking-widest rounded-sm transition-colors shadow-md flex items-center justify-center gap-2"
               >
                 <span>VIEW FULL CONTACT HUB</span>
                 <ArrowRightIcon size={14} />
