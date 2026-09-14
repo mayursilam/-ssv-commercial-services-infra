@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const navLinks = [
     { name: 'Home', href: 'index.html', key: 'home' },
-    { name: 'About SSV', href: 'about.html', key: 'about' },
+    { name: 'About Us', href: 'about.html', key: 'about' },
     { 
       name: 'Services', 
       href: 'services.html', 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from './Logo';
-import { PhoneIcon, MailIcon, MapPinIcon, WhatsappIcon, ArrowRightIcon } from './Icons';
+import { PhoneIcon, MailIcon, MapPinIcon, WhatsappIcon, FacebookIcon, ArrowRightIcon } from './Icons';
 import { COMPANY_INFO, CORE_PILLARS } from '../data/content';
 
 interface FooterProps {
@@ -53,7 +53,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </span>
             </div>
 
-            <div className="pt-3">
+            <div className="pt-3 flex flex-wrap items-center gap-2.5">
               <a
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
@@ -62,6 +62,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               >
                 <WhatsappIcon size={16} color="#25D366" />
                 <span>Chat with Operations on WhatsApp</span>
+              </a>
+              <a
+                href={COMPANY_INFO.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit SSV Commercial Services on Facebook"
+                className="inline-flex items-center gap-2 px-3.5 py-2.5 bg-[#031B2D] hover:bg-[#1877F2] text-[#1877F2] hover:text-white border border-[#0F3759] hover:border-[#1877F2] rounded-sm text-xs font-bold tracking-wider uppercase transition-all"
+              >
+                <FacebookIcon size={16} color="currentColor" />
+                <span>Facebook</span>
               </a>
             </div>
           </div>
@@ -168,7 +178,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   onClick={(e) => handleNav(e, 'about', 'about.html')}
                   className="hover:text-white transition-colors"
                 >
-                  About SSV
+                  About Us
                 </a>
               </li>
               <li>

@@ -737,6 +737,25 @@ button {
   transform: translateY(-1px);
 }
 
+.btn-facebook-footer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1877F2;
+  color: #FFFFFF;
+  font-family: var(--font-montserrat);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.2s ease;
+}
+
+.btn-facebook-footer:hover {
+  background-color: #166fe5;
+  transform: translateY(-1px);
+}
+
 /* ==========================================================================
    HERO BANNER (HOMEPAGE & INNER PAGES)
    ========================================================================== */

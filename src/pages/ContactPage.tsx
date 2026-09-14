@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeImage } from '../components/SafeImage';
-import { PhoneIcon, MailIcon, MapPinIcon, WhatsappIcon, ShieldIcon, SparklesIcon, ConstructionIcon, CheckIcon } from '../components/Icons';
+import { PhoneIcon, MailIcon, MapPinIcon, WhatsappIcon, FacebookIcon, ShieldIcon, SparklesIcon, ConstructionIcon, CheckIcon } from '../components/Icons';
 import { COMPANY_INFO } from '../data/content';
 import { IMAGES } from '../data/images';
 
@@ -148,6 +148,30 @@ export const ContactPage: React.FC = () => {
                   </a>
                 </div>
               </div>
+            </div>
+
+            {/* Official Facebook Social Channel */}
+            <div className="mt-8 p-5 bg-[#F6F8FA] border border-slate-200 rounded-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3 text-center sm:text-left">
+                <div className="w-10 h-10 rounded-full bg-[#1877F2]/10 text-[#1877F2] flex items-center justify-center flex-shrink-0">
+                  <FacebookIcon size={20} color="#1877F2" />
+                </div>
+                <div>
+                  <span className="text-xs font-bold tracking-widest text-[#848A99] uppercase block">OFFICIAL SOCIAL MEDIA</span>
+                  <h4 className="text-sm font-black text-[#001423] font-gotham uppercase">Connect with SSV on Facebook</h4>
+                </div>
+              </div>
+              <a
+                href={COMPANY_INFO.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit SSV Commercial Services on Facebook"
+                id="contact-btn-facebook"
+                className="w-full sm:w-auto px-5 py-2.5 bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold text-xs uppercase tracking-widest rounded-sm transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <FacebookIcon size={16} color="#FFFFFF" />
+                <span>Visit Facebook Page</span>
+              </a>
             </div>
           </div>
 

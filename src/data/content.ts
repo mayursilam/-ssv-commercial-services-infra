@@ -34,6 +34,10 @@ export const COMPANY_INFO = {
   phone: '+91 93590 72600',
   phoneRaw: '+919359072600',
   whatsappUrl: 'https://wa.me/919359072600',
+  facebookUrl: 'https://www.facebook.com/people/Ssv-commercial-services/61592467075226/',
+  social: {
+    facebook: 'https://www.facebook.com/people/Ssv-commercial-services/61592467075226/'
+  },
   email: 'ssvsecservices@gmail.com',
   address: {
     label: 'Head Office',
