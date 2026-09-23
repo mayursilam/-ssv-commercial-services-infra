@@ -14,9 +14,9 @@ interface SecurityPageProps {
 
 export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
   return (
-    <div className="bg-white text-[#001423]">
+    <div className="bg-white text-[#102A3A]">
       {/* Banner */}
-      <section className="relative py-20 lg:py-28 bg-[#001423] text-white border-b-2 border-[#C0122A] overflow-hidden">
+      <section className="relative py-20 lg:py-28 bg-[#073B57] text-white border-b-2 border-[#D9043E] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <SafeImage
             src={IMAGES.securityGuard.url}
@@ -24,20 +24,20 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             aspectRatio="auto"
             containerClassName="w-full h-full"
             overlay={true}
-            darkOverlayOpacity="bg-gradient-to-r from-[#000E1A]/95 via-[#001423]/80 to-[#001423]/60"
+            darkOverlayOpacity="bg-[#073B57]/85"
           />
           <div className="absolute inset-0 tech-grid-pattern-dark opacity-30" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#C0122A]/20 border border-[#C0122A]/40 text-white text-xs font-bold tracking-widest uppercase rounded-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#D9043E]/20 border border-[#D9043E]/40 text-white text-xs font-bold tracking-widest uppercase rounded-sm">
               DIVISION 01 // SECURITY SERVICES
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black font-gotham uppercase tracking-tight text-white">
               ENSURING SAFETY & PERIMETER DEFENSE
             </h1>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
+            <p className="text-base sm:text-lg text-[#D8EFFA] leading-relaxed">
               Tailored protection frameworks combining vetted security officers, strict access management, central video monitoring, and emergency response teams.
             </p>
             <div className="pt-2">
@@ -46,7 +46,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
                 onClick={() => {
                   if (onNavigate) onNavigate('contact');
                 }}
-                className="px-8 py-4 bg-[#C0122A] hover:bg-[#9E0E22] text-white text-xs font-black tracking-widest uppercase rounded-sm inline-flex items-center gap-2 transition-all shadow-xl"
+                className="px-8 py-4 bg-[#D9043E] hover:bg-[#B50334] text-white text-xs font-black tracking-widest uppercase rounded-sm inline-flex items-center gap-2 transition-all shadow-xl"
               >
                 <span>DEPLOY SECURITY PERSONNEL</span>
                 <ArrowRightIcon size={14} />
@@ -60,13 +60,13 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
       <section className="py-20 bg-[#FFFFFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <span className="text-xs font-bold tracking-[0.2em] text-[#C0122A] uppercase">
+            <span className="text-xs font-bold tracking-[0.2em] text-[#D9043E] uppercase">
               PROTECTION SPECIALIZATIONS
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-[#001423] font-gotham uppercase">
+            <h2 className="text-3xl sm:text-4xl font-black text-[#102A3A] font-gotham uppercase">
               COMPREHENSIVE SECURITY PORTFOLIO
             </h2>
-            <p className="text-sm text-[#5A6273]">
+            <p className="text-sm text-[#3B586F]">
               Every security deployment is backed by verified background checks, site-specific SOPs, and disciplined supervision.
             </p>
           </div>
@@ -78,34 +78,34 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
                 <div
                   key={service.id}
                   id={service.id}
-                  className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-8 bg-[#F6F8FA] border border-slate-200 rounded-sm hover:border-[#C0122A] transition-all`}
+                  className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center p-6 sm:p-8 bg-[#EAF6FC] border border-[#D8EFFA] rounded-sm hover:border-[#D9043E] transition-all`}
                 >
                   <div className={`lg:col-span-6 space-y-4 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                     <div className="flex items-center gap-3">
-                      <span className="text-sm font-mono font-bold text-[#C0122A] px-2 py-0.5 bg-red-100 rounded">
+                      <span className="text-sm font-mono font-bold text-[#D9043E] px-2 py-0.5 bg-[#FDF2F4] rounded">
                         {service.number}
                       </span>
-                      <span className="text-xs font-bold text-[#848A99] uppercase tracking-wider">
+                      <span className="text-xs font-bold text-[#0877B5] uppercase tracking-wider">
                         {service.tagline}
                       </span>
                     </div>
 
-                    <h3 className="text-2xl sm:text-3xl font-black text-[#001423] font-gotham uppercase">
+                    <h3 className="text-2xl sm:text-3xl font-black text-[#102A3A] font-gotham uppercase">
                       {service.title}
                     </h3>
 
-                    <p className="text-sm text-[#5A6273] leading-relaxed">
+                    <p className="text-sm text-[#3B586F] leading-relaxed">
                       {service.description}
                     </p>
 
                     <div className="pt-2">
-                      <div className="text-xs font-bold text-[#001423] uppercase tracking-wider mb-2">
+                      <div className="text-xs font-bold text-[#102A3A] uppercase tracking-wider mb-2">
                         Key Deployment Protocols:
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {service.features.map((feat, i) => (
-                          <div key={i} className="flex items-start gap-2 text-xs text-[#001423]">
-                            <CheckIcon size={14} color="#C0122A" className="mt-0.5 flex-shrink-0" />
+                          <div key={i} className="flex items-start gap-2 text-xs text-[#102A3A]">
+                            <CheckIcon size={14} color="#D9043E" className="mt-0.5 flex-shrink-0" />
                             <span>{feat}</span>
                           </div>
                         ))}
@@ -117,7 +117,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
                         onClick={() => {
                           if (onNavigate) onNavigate('contact');
                         }}
-                        className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#C0122A] uppercase hover:underline"
+                        className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#D9043E] uppercase hover:underline"
                       >
                         <span>Contact for {service.title}</span>
                         <ArrowRightIcon size={12} />
@@ -130,7 +130,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
                       src={IMAGES[service.imageId].url}
                       alt={service.title}
                       aspectRatio="video"
-                      containerClassName="rounded-sm shadow-md border border-slate-300"
+                      containerClassName="rounded-sm shadow-md border border-[#D8EFFA]"
                       badge="VERIFIED SECURITY"
                     />
                   </div>
@@ -142,19 +142,19 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
       </section>
 
       {/* Security Operations Rigor */}
-      <section className="py-16 bg-[#001423] text-white border-t-2 border-[#C0122A]">
+      <section className="py-16 bg-[#073B57] text-white border-t-2 border-[#D9043E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center sm:text-left">
-          <div className="p-6 bg-[#031B2D] border border-[#0F3759] rounded-sm space-y-2">
-            <h4 className="text-base font-bold text-[#C0122A] uppercase">Vetted & Verified Guards</h4>
-            <p className="text-xs text-slate-300">Security personnel undergo identity verification, address authentication, and background screening.</p>
+          <div className="p-6 bg-[#08486A] border border-[#0F5A82] rounded-sm space-y-2">
+            <h4 className="text-base font-bold text-[#D9043E] uppercase">Vetted & Verified Guards</h4>
+            <p className="text-xs text-[#D8EFFA]">Security personnel undergo identity verification, address authentication, and background screening.</p>
           </div>
-          <div className="p-6 bg-[#031B2D] border border-[#0F3759] rounded-sm space-y-2">
+          <div className="p-6 bg-[#08486A] border border-[#0F5A82] rounded-sm space-y-2">
             <h4 className="text-base font-bold text-white uppercase">24/7 Field Patrol Audits</h4>
-            <p className="text-xs text-slate-300">Senior patrolling officers conduct scheduled and surprise night-shift inspections to verify alertness.</p>
+            <p className="text-xs text-[#D8EFFA]">Senior patrolling officers conduct scheduled and surprise night-shift inspections to verify alertness.</p>
           </div>
-          <div className="p-6 bg-[#031B2D] border border-[#0F3759] rounded-sm space-y-2">
-            <h4 className="text-base font-bold text-[#C0122A] uppercase">Fire & Emergency SOPs</h4>
-            <p className="text-xs text-slate-300">Trained in emergency evacuation drills, fire extinguisher operation, and rapid municipal escalation.</p>
+          <div className="p-6 bg-[#08486A] border border-[#0F5A82] rounded-sm space-y-2">
+            <h4 className="text-base font-bold text-[#D9043E] uppercase">Fire & Emergency SOPs</h4>
+            <p className="text-xs text-[#D8EFFA]">Trained in emergency evacuation drills, fire extinguisher operation, and rapid municipal escalation.</p>
           </div>
         </div>
       </section>

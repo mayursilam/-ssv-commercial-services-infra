@@ -94,10 +94,14 @@ export const COMPANY_INFO = {
   ],
   hours: 'Operational Support & Inquiry Line',
   colors: {
-    red: '#C0122A',
-    coolGray: '#848A99',
+    red: '#D9043E',
+    coolGray: '#3B586F',
+    primaryBlue: '#0877B5',
+    deepBlue: '#073B57',
+    lightBlue: '#EAF6FC',
+    softBlue: '#D8EFFA',
     white: '#FFFFFF',
-    darkNavy: '#001423'
+    darkNavy: '#102A3A'
   }
 };
 
@@ -111,7 +115,7 @@ export const CORE_PILLARS = [
     link: 'security.html',
     pageKey: 'security',
     imageId: 'securityGuard',
-    accentColor: '#C0122A',
+    accentColor: '#D9043E',
     stats: '24/7 Monitored Protection'
   },
   {
@@ -123,7 +127,7 @@ export const CORE_PILLARS = [
     link: 'housekeeping.html',
     pageKey: 'housekeeping',
     imageId: 'housekeepingStaff',
-    accentColor: '#848A99',
+    accentColor: '#0877B5',
     stats: 'High Hygiene Standards'
   },
   {
@@ -135,7 +139,7 @@ export const CORE_PILLARS = [
     link: 'infrastructure.html',
     pageKey: 'infrastructure',
     imageId: 'constructionSite',
-    accentColor: '#C0122A',
+    accentColor: '#D9043E',
     stats: 'Engineered Execution'
   }
 ];

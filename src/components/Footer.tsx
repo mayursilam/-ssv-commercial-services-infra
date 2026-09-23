@@ -17,9 +17,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   };
 
   return (
-    <footer className="bg-[#000E1A] text-slate-300 border-t-2 border-[#C0122A] relative overflow-hidden">
+    <footer className="bg-[#EAF6FC] text-[#102A3A] border-t-2 border-[#D9043E] relative overflow-hidden">
       {/* Subtle background tech grid */}
-      <div className="absolute inset-0 tech-grid-pattern-dark opacity-40 pointer-events-none" />
+      <div className="absolute inset-0 tech-grid-pattern opacity-30 pointer-events-none" />
 
       {/* Main Footer Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
@@ -37,18 +37,18 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               />
             </a>
             
-            <p className="text-sm text-slate-400 leading-relaxed pr-4">
+            <p className="text-sm text-[#3B586F] leading-relaxed pr-4">
               SSV Commercial Services & Infra Private Limited delivers premier security, housekeeping, and civil infrastructure solutions designed to support safer, cleaner, and better-managed environments across commercial, residential, and industrial facilities.
             </p>
 
             <div className="pt-2 flex flex-wrap gap-2">
-              <span className="px-2.5 py-1 bg-[#031B2D] border border-[#0F3759] text-[11px] font-bold text-slate-300 uppercase tracking-wider rounded-sm">
+              <span className="px-2.5 py-1 bg-[#D8EFFA] border border-[#BCE0F5] text-[11px] font-bold text-[#073B57] uppercase tracking-wider rounded-sm">
                 01 Security
               </span>
-              <span className="px-2.5 py-1 bg-[#031B2D] border border-[#0F3759] text-[11px] font-bold text-slate-300 uppercase tracking-wider rounded-sm">
+              <span className="px-2.5 py-1 bg-[#D8EFFA] border border-[#BCE0F5] text-[11px] font-bold text-[#073B57] uppercase tracking-wider rounded-sm">
                 02 Housekeeping
               </span>
-              <span className="px-2.5 py-1 bg-[#031B2D] border border-[#0F3759] text-[11px] font-bold text-slate-300 uppercase tracking-wider rounded-sm">
+              <span className="px-2.5 py-1 bg-[#D8EFFA] border border-[#BCE0F5] text-[11px] font-bold text-[#073B57] uppercase tracking-wider rounded-sm">
                 03 Infra
               </span>
             </div>
@@ -58,9 +58,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#031B2D] hover:bg-[#06243C] text-[#25D366] border border-[#0F3759] rounded-sm text-xs font-bold tracking-wider uppercase transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-[#D8EFFA] text-[#15803D] border border-[#D8EFFA] rounded-sm text-xs font-bold tracking-wider uppercase transition-all shadow-sm"
               >
-                <WhatsappIcon size={16} color="#25D366" />
+                <WhatsappIcon size={16} color="#15803D" />
                 <span>Chat with Operations on WhatsApp</span>
               </a>
               <a
@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit SSV Commercial Services on Facebook"
-                className="inline-flex items-center gap-2 px-3.5 py-2.5 bg-[#031B2D] hover:bg-[#1877F2] text-[#1877F2] hover:text-white border border-[#0F3759] hover:border-[#1877F2] rounded-sm text-xs font-bold tracking-wider uppercase transition-all"
+                className="inline-flex items-center gap-2 px-3.5 py-2.5 bg-white hover:bg-[#1877F2] text-[#1877F2] hover:text-white border border-[#D8EFFA] hover:border-[#1877F2] rounded-sm text-xs font-bold tracking-wider uppercase transition-all shadow-sm"
               >
                 <FacebookIcon size={16} color="currentColor" />
                 <span>Facebook</span>
@@ -78,79 +78,79 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Services Column (2.5 cols) */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-white text-xs font-black tracking-widest uppercase border-b border-[#0F3759] pb-2 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-[#C0122A]" />
+            <h4 className="text-[#073B57] text-xs font-black tracking-widest uppercase border-b border-[#D8EFFA] pb-2 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-[#D9043E]" />
               Core Capabilities
             </h4>
-            <ul className="space-y-2.5 text-xs text-slate-400">
+            <ul className="space-y-2.5 text-xs text-[#3B586F]">
               <li>
                 <a
                   href="security.html"
                   onClick={(e) => handleNav(e, 'security', 'security.html')}
-                  className="hover:text-white transition-colors flex items-center justify-between group"
+                  className="hover:text-[#0877B5] transition-colors flex items-center justify-between group"
                 >
                   <span>Security & Manned Guarding</span>
-                  <span className="text-[#C0122A] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#D9043E] group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </li>
               <li>
                 <a
                   href="security.html"
                   onClick={(e) => handleNav(e, 'security', 'security.html')}
-                  className="hover:text-white transition-colors flex items-center justify-between group"
+                  className="hover:text-[#0877B5] transition-colors flex items-center justify-between group"
                 >
                   <span>CCTV & Electronic Surveillance</span>
-                  <span className="text-[#C0122A] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#D9043E] group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </li>
               <li>
                 <a
                   href="housekeeping.html"
                   onClick={(e) => handleNav(e, 'housekeeping', 'housekeeping.html')}
-                  className="hover:text-white transition-colors flex items-center justify-between group"
+                  className="hover:text-[#0877B5] transition-colors flex items-center justify-between group"
                 >
                   <span>Commercial & Office Cleaning</span>
-                  <span className="text-[#C0122A] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#D9043E] group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </li>
               <li>
                 <a
                   href="housekeeping.html"
                   onClick={(e) => handleNav(e, 'housekeeping', 'housekeeping.html')}
-                  className="hover:text-white transition-colors flex items-center justify-between group"
+                  className="hover:text-[#0877B5] transition-colors flex items-center justify-between group"
                 >
                   <span>Industrial Deep Sanitization</span>
-                  <span className="text-[#C0122A] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#D9043E] group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </li>
               <li>
                 <a
                   href="infrastructure.html"
                   onClick={(e) => handleNav(e, 'infrastructure', 'infrastructure.html')}
-                  className="hover:text-white transition-colors flex items-center justify-between group"
+                  className="hover:text-[#0877B5] transition-colors flex items-center justify-between group"
                 >
                   <span>Turnkey Civil Projects</span>
-                  <span className="text-[#C0122A] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#D9043E] group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </li>
               <li>
                 <a
                   href="infrastructure.html"
                   onClick={(e) => handleNav(e, 'infrastructure', 'infrastructure.html')}
-                  className="hover:text-white transition-colors flex items-center justify-between group"
+                  className="hover:text-[#0877B5] transition-colors flex items-center justify-between group"
                 >
                   <span>Utility Shifting & Relocation</span>
-                  <span className="text-[#C0122A] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#D9043E] group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </li>
               <li>
                 <a
                   href="infrastructure.html"
                   onClick={(e) => handleNav(e, 'infrastructure', 'infrastructure.html')}
-                  className="hover:text-white transition-colors flex items-center justify-between group"
+                  className="hover:text-[#0877B5] transition-colors flex items-center justify-between group"
                 >
                   <span>Road & Pavement Construction</span>
-                  <span className="text-[#C0122A] group-hover:translate-x-1 transition-transform">→</span>
+                  <span className="text-[#D9043E] group-hover:translate-x-1 transition-transform">→</span>
                 </a>
               </li>
             </ul>
@@ -158,16 +158,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Quick Navigation (2 cols) */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="text-white text-xs font-black tracking-widest uppercase border-b border-[#0F3759] pb-2 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-[#C0122A]" />
+            <h4 className="text-[#073B57] text-xs font-black tracking-widest uppercase border-b border-[#D8EFFA] pb-2 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-[#D9043E]" />
               Navigation
             </h4>
-            <ul className="space-y-2.5 text-xs text-slate-400">
+            <ul className="space-y-2.5 text-xs text-[#3B586F]">
               <li>
                 <a
                   href="index.html"
                   onClick={(e) => handleNav(e, 'home', 'index.html')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#0877B5] transition-colors"
                 >
                   Home
                 </a>
@@ -176,7 +176,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <a
                   href="about.html"
                   onClick={(e) => handleNav(e, 'about', 'about.html')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#0877B5] transition-colors"
                 >
                   About Us
                 </a>
@@ -185,7 +185,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <a
                   href="services.html"
                   onClick={(e) => handleNav(e, 'services', 'services.html')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#0877B5] transition-colors"
                 >
                   Services Overview
                 </a>
@@ -194,7 +194,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <a
                   href="industries.html"
                   onClick={(e) => handleNav(e, 'industries', 'industries.html')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#0877B5] transition-colors"
                 >
                   Industries Served
                 </a>
@@ -203,7 +203,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <a
                   href="why-ssv.html"
                   onClick={(e) => handleNav(e, 'why-ssv', 'why-ssv.html')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#0877B5] transition-colors"
                 >
                   Why SSV
                 </a>
@@ -212,7 +212,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <a
                   href="contact.html"
                   onClick={(e) => handleNav(e, 'contact', 'contact.html')}
-                  className="hover:text-white transition-colors"
+                  className="hover:text-[#0877B5] transition-colors"
                 >
                   Contact & Enquiries
                 </a>
@@ -222,39 +222,39 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Contact Details (3 cols) */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="text-white text-xs font-black tracking-widest uppercase border-b border-[#0F3759] pb-2 flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-[#C0122A]" />
+            <h4 className="text-[#073B57] text-xs font-black tracking-widest uppercase border-b border-[#D8EFFA] pb-2 flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-[#D9043E]" />
               Office Locations
             </h4>
-            <div className="space-y-3 text-xs text-slate-300">
+            <div className="space-y-3 text-xs text-[#102A3A]">
               <div className="flex items-start gap-3">
-                <MapPinIcon size={16} color="#C0122A" className="flex-shrink-0 mt-0.5" />
+                <MapPinIcon size={16} color="#D9043E" className="flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-[11px] font-bold text-[#C0122A] uppercase tracking-wider">Head Office</div>
-                  <p className="font-semibold text-white">{COMPANY_INFO.headOffice.line1}</p>
-                  <p className="text-slate-400">{COMPANY_INFO.headOffice.line2}</p>
-                  <p className="text-slate-400">{COMPANY_INFO.headOffice.state} - {COMPANY_INFO.headOffice.pincode}, {COMPANY_INFO.headOffice.country}</p>
+                  <div className="text-[11px] font-bold text-[#D9043E] uppercase tracking-wider">Head Office</div>
+                  <p className="font-bold text-[#102A3A]">{COMPANY_INFO.headOffice.line1}</p>
+                  <p className="text-[#3B586F]">{COMPANY_INFO.headOffice.line2}</p>
+                  <p className="text-[#3B586F]">{COMPANY_INFO.headOffice.state} - {COMPANY_INFO.headOffice.pincode}, {COMPANY_INFO.headOffice.country}</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 pt-1 border-t border-[#0F3759]/40">
-                <MapPinIcon size={16} color="#C0122A" className="flex-shrink-0 mt-0.5" />
+              <div className="flex items-start gap-3 pt-1 border-t border-[#D8EFFA]">
+                <MapPinIcon size={16} color="#D9043E" className="flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-[11px] font-bold text-[#C0122A] uppercase tracking-wider">Pune Office</div>
-                  <p className="text-slate-300 leading-snug">{COMPANY_INFO.puneOffice.formatted}</p>
+                  <div className="text-[11px] font-bold text-[#D9043E] uppercase tracking-wider">Pune Office</div>
+                  <p className="text-[#3B586F] leading-snug">{COMPANY_INFO.puneOffice.formatted}</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 pt-2 border-t border-[#0F3759]/60">
-                <PhoneIcon size={16} color="#C0122A" className="flex-shrink-0" />
-                <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-white font-semibold transition-colors">
+              <div className="flex items-center gap-3 pt-2 border-t border-[#D8EFFA]">
+                <PhoneIcon size={16} color="#D9043E" className="flex-shrink-0" />
+                <a href={`tel:${COMPANY_INFO.phoneRaw}`} className="hover:text-[#0877B5] font-bold text-[#102A3A] transition-colors">
                   {COMPANY_INFO.phone}
                 </a>
               </div>
 
               <div className="flex items-center gap-3">
-                <MailIcon size={16} color="#848A99" className="flex-shrink-0" />
-                <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-white transition-colors">
+                <MailIcon size={16} color="#0877B5" className="flex-shrink-0" />
+                <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-[#0877B5] font-semibold text-[#102A3A] transition-colors">
                   {COMPANY_INFO.email}
                 </a>
               </div>
@@ -264,7 +264,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   href="contact.html"
                   id="footer-contact-cta"
                   onClick={(e) => handleNav(e, 'contact', 'contact.html')}
-                  className="w-full py-2.5 px-3 bg-[#C0122A] hover:bg-[#9E0E22] text-white text-center font-bold text-xs uppercase tracking-wider rounded-sm transition-colors flex items-center justify-center gap-2"
+                  className="w-full py-2.5 px-3 bg-[#D9043E] hover:bg-[#B50334] text-white text-center font-bold text-xs uppercase tracking-wider rounded-sm transition-colors flex items-center justify-center gap-2 shadow-md"
                 >
                   <span>GET IN TOUCH</span>
                   <ArrowRightIcon size={14} />
@@ -275,16 +275,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom Legal Bar */}
-        <div className="pt-8 mt-8 border-t border-[#0F3759]/60 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="pt-8 mt-8 border-t border-[#D8EFFA] flex flex-col md:flex-row items-center justify-between text-xs text-[#5B7A92] gap-4">
           <div>
             <p>© 2026 {COMPANY_INFO.legalName}. All rights reserved.</p>
           </div>
           <div className="flex items-center gap-6">
-            <span className="hover:text-slate-400 transition-colors">Security</span>
-            <span className="text-slate-700">•</span>
-            <span className="hover:text-slate-400 transition-colors">Housekeeping</span>
-            <span className="text-slate-700">•</span>
-            <span className="hover:text-slate-400 transition-colors">Infra Services</span>
+            <span className="hover:text-[#0877B5] transition-colors">Security</span>
+            <span className="text-[#8EBED9]">•</span>
+            <span className="hover:text-[#0877B5] transition-colors">Housekeeping</span>
+            <span className="text-[#8EBED9]">•</span>
+            <span className="hover:text-[#0877B5] transition-colors">Infra Services</span>
           </div>
         </div>
       </div>

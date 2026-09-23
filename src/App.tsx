@@ -94,7 +94,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white font-gotham text-[#001423]">
+    <div className="min-h-screen flex flex-col bg-white font-gotham text-[#102A3A]">
       <Header
         currentPage={currentPage}
         onNavigate={navigateTo}

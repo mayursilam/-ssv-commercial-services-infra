@@ -2,24 +2,28 @@
 
 @layer base {
   :root {
-    --ssv-red: #C0122A;
-    --ssv-red-hover: #9E0E22;
-    --ssv-red-light: #FDE8EA;
-    --ssv-navy: #001423;
-    --ssv-navy-deep: #000B14;
-    --ssv-navy-surface: #031B2D;
-    --ssv-navy-card: #06243C;
-    --ssv-navy-border: #0F3759;
-    --ssv-gray: #848A99;
-    --ssv-gray-light: #B4B9C6;
-    --ssv-gray-muted: #E2E5EC;
-    --ssv-bg-light: #F6F8FA;
-    --ssv-bg-alt: #EDF1F5;
+    --ssv-red: #D9043E;
+    --ssv-red-hover: #B50334;
+    --ssv-red-light: #FDF2F4;
+    --ssv-navy: #102A3A;
+    --ssv-navy-deep: #073B57;
+    --ssv-navy-surface: #EAF6FC;
+    --ssv-navy-card: #FFFFFF;
+    --ssv-navy-border: #D8EFFA;
+    --ssv-blue-primary: #0877B5;
+    --ssv-blue-deep: #073B57;
+    --ssv-blue-light: #EAF6FC;
+    --ssv-blue-soft: #D8EFFA;
+    --ssv-gray: #0877B5;
+    --ssv-gray-light: #D8EFFA;
+    --ssv-gray-muted: #EAF6FC;
+    --ssv-bg-light: #EAF6FC;
+    --ssv-bg-alt: #D8EFFA;
   }
 
   body {
     font-family: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    color: #001423;
+    color: #102A3A;
     background-color: #FFFFFF;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -42,24 +46,24 @@
 }
 
 /* SSV Official Colors */
-.bg-ssv-red { background-color: #C0122A; }
-.text-ssv-red { color: #C0122A; }
-.border-ssv-red { border-color: #C0122A; }
+.bg-ssv-red { background-color: #D9043E; }
+.text-ssv-red { color: #D9043E; }
+.border-ssv-red { border-color: #D9043E; }
 
-.bg-ssv-navy { background-color: #001423; }
-.text-ssv-navy { color: #001423; }
-.border-ssv-navy { border-color: #001423; }
+.bg-ssv-navy { background-color: #073B57; }
+.text-ssv-navy { color: #102A3A; }
+.border-ssv-navy { border-color: #D8EFFA; }
 
-.bg-ssv-navy-surface { background-color: #031B2D; }
-.bg-ssv-navy-card { background-color: #06243C; }
-.border-ssv-navy-border { border-color: #0F3759; }
+.bg-ssv-navy-surface { background-color: #EAF6FC; }
+.bg-ssv-navy-card { background-color: #FFFFFF; }
+.border-ssv-navy-border { border-color: #D8EFFA; }
 
-.bg-ssv-gray { background-color: #848A99; }
-.text-ssv-gray { color: #848A99; }
-.border-ssv-gray { border-color: #848A99; }
+.bg-ssv-gray { background-color: #0877B5; }
+.text-ssv-gray { color: #3B586F; }
+.border-ssv-gray { border-color: #D8EFFA; }
 
-.bg-ssv-light { background-color: #F6F8FA; }
-.bg-ssv-alt { background-color: #EDF1F5; }
+.bg-ssv-light { background-color: #EAF6FC; }
+.bg-ssv-alt { background-color: #D8EFFA; }
 
 /* Custom Animations and Transitions */
 @keyframes pulseSubtle {

@@ -61,15 +61,15 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <>
       {/* Top Corporate Utility Bar */}
-      <div className="hidden lg:block bg-[#000E1A] text-slate-300 border-b border-[#0F3759]/40 py-1.5 px-6 text-xs select-none">
+      <div className="hidden lg:block bg-[#D8EFFA] text-[#102A3A] border-b border-[#C2E2F4] py-1.5 px-6 text-xs select-none">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
-            <span className="font-semibold text-white/90 tracking-wide flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#C0122A] inline-block animate-pulse" />
+            <span className="font-bold text-[#073B57] tracking-wide flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#D9043E] inline-block animate-pulse" />
               SSV COMMERCIAL SERVICES & INFRA PRIVATE LIMITED
             </span>
-            <span className="text-slate-500">|</span>
-            <span className="text-slate-400 font-medium tracking-wider">
+            <span className="text-[#8EBED9]">|</span>
+            <span className="text-[#102A3A] font-semibold tracking-wider">
               ENSURING SAFETY, DELIVERING EXCELLENCE
             </span>
           </div>
@@ -77,25 +77,25 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-6">
             <a 
               href={`tel:${COMPANY_INFO.phoneRaw}`} 
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-[#102A3A] hover:text-[#0877B5] font-semibold transition-colors"
             >
-              <PhoneIcon size={13} color="#C0122A" />
+              <PhoneIcon size={13} color="#D9043E" />
               <span>{COMPANY_INFO.phone}</span>
             </a>
             <a 
               href={`mailto:${COMPANY_INFO.email}`} 
-              className="flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
+              className="flex items-center gap-1.5 text-[#102A3A] hover:text-[#0877B5] font-semibold transition-colors"
             >
-              <MailIcon size={13} color="#848A99" />
+              <MailIcon size={13} color="#0877B5" />
               <span>{COMPANY_INFO.email}</span>
             </a>
             <a 
               href={COMPANY_INFO.whatsappUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-[#25D366] hover:brightness-110 font-semibold transition-all"
+              className="flex items-center gap-1 text-[#15803D] hover:text-[#166534] font-bold transition-all"
             >
-              <WhatsappIcon size={13} color="#25D366" />
+              <WhatsappIcon size={13} color="#15803D" />
               <span>WhatsApp Us</span>
             </a>
           </div>
@@ -106,8 +106,8 @@ export const Header: React.FC<HeaderProps> = ({
       <header
         className={`sticky top-0 z-50 transition-all duration-300 w-full ${
           isScrolled
-            ? 'bg-[#001423]/95 backdrop-blur-md shadow-2xl border-b border-[#0F3759]/60 py-3'
-            : 'bg-[#001423] border-b border-white/5 py-4'
+            ? 'bg-[#EAF6FC]/95 backdrop-blur-md shadow-lg border-b border-[#D8EFFA] py-3'
+            : 'bg-[#EAF6FC] border-b border-[#D8EFFA] py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -141,14 +141,14 @@ export const Header: React.FC<HeaderProps> = ({
                     <a
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.key, item.href)}
-                      className={`px-3 py-2 text-sm font-semibold tracking-wide transition-colors duration-150 inline-flex items-center gap-1 rounded ${
+                      className={`px-3 py-2 text-sm font-bold tracking-wide transition-colors duration-150 inline-flex items-center gap-1 rounded ${
                         isActive
-                          ? 'text-white bg-white/10'
-                          : 'text-slate-300 hover:text-white hover:bg-white/5'
+                          ? 'text-white bg-[#0877B5]'
+                          : 'text-[#102A3A] hover:text-[#0877B5] hover:bg-[#D8EFFA]'
                       }`}
                     >
                       {item.name}
-                      <svg className="w-3.5 h-3.5 text-slate-400 group-hover:text-white transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-3.5 h-3.5 text-[#0877B5] group-hover:text-[#073B57] transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                       </svg>
                     </a>
@@ -159,7 +159,7 @@ export const Header: React.FC<HeaderProps> = ({
                         servicesDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2 pointer-events-none'
                       }`}
                     >
-                      <div className="bg-[#000E1A] border border-[#0F3759] shadow-2xl rounded-sm p-3 space-y-1">
+                      <div className="bg-white border border-[#D8EFFA] border-t-2 border-t-[#D9043E] shadow-xl rounded-sm p-3 space-y-1">
                         {item.children?.map((child) => (
                           <a
                             key={child.key}
@@ -167,12 +167,12 @@ export const Header: React.FC<HeaderProps> = ({
                             onClick={(e) => handleLinkClick(e, child.key, child.href)}
                             className={`block p-2.5 rounded transition-all ${
                               currentPage === child.key 
-                                ? 'bg-[#C0122A]/20 border-l-2 border-[#C0122A] text-white' 
-                                : 'hover:bg-white/5 text-slate-300 hover:text-white'
+                                ? 'bg-[#EAF6FC] border-l-2 border-[#D9043E] text-[#102A3A]' 
+                                : 'hover:bg-[#EAF6FC] text-[#102A3A]'
                             }`}
                           >
-                            <div className="text-xs font-bold uppercase tracking-wider">{child.name}</div>
-                            <div className="text-[11px] text-slate-400 mt-0.5 leading-snug">{child.desc}</div>
+                            <div className="text-xs font-bold uppercase tracking-wider text-[#102A3A]">{child.name}</div>
+                            <div className="text-[11px] text-[#3B586F] mt-0.5 leading-snug">{child.desc}</div>
                           </a>
                         ))}
                       </div>
@@ -186,10 +186,10 @@ export const Header: React.FC<HeaderProps> = ({
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleLinkClick(e, item.key, item.href)}
-                  className={`px-3 py-2 text-sm font-semibold tracking-wide transition-colors duration-150 rounded ${
+                  className={`px-3 py-2 text-sm font-bold tracking-wide transition-colors duration-150 rounded ${
                     isActive
-                      ? 'text-white bg-white/10'
-                      : 'text-slate-300 hover:text-white hover:bg-white/5'
+                      ? 'text-white bg-[#0877B5]'
+                      : 'text-[#102A3A] hover:text-[#0877B5] hover:bg-[#D8EFFA]'
                   }`}
                 >
                   {item.name}
@@ -205,7 +205,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => {
                 if (onNavigate) onNavigate('contact');
               }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#C0122A] hover:bg-[#9E0E22] text-white text-xs font-bold tracking-widest uppercase transition-all duration-200 shadow-md shadow-red-950/40 rounded-sm hover:translate-y-[-1px]"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#D9043E] hover:bg-[#B50334] text-white text-xs font-bold tracking-widest uppercase transition-all duration-200 shadow-md shadow-red-950/40 rounded-sm hover:translate-y-[-1px]"
             >
               <span>GET IN TOUCH</span>
               <ArrowRightIcon size={14} />
@@ -215,7 +215,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2.5 rounded text-white hover:bg-white/10 transition-colors"
+            className="lg:hidden p-2.5 rounded text-[#102A3A] hover:bg-[#D8EFFA] transition-colors"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <CloseIcon size={24} /> : <MenuIcon size={24} />}
@@ -225,9 +225,9 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-[#001423]/98 backdrop-blur-xl pt-24 pb-8 px-6 flex flex-col justify-between overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 z-40 bg-[#EAF6FC]/98 backdrop-blur-xl pt-24 pb-8 px-6 flex flex-col justify-between overflow-y-auto">
           <div className="space-y-4">
-            <div className="pb-4 border-b border-white/10 flex justify-center">
+            <div className="pb-4 border-b border-[#D8EFFA] flex justify-center">
               <Logo variant="stacked" className="w-[180px]" />
             </div>
 
@@ -239,22 +239,22 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={(e) => handleLinkClick(e, item.key, item.href)}
                     className={`block py-3 px-3 rounded text-base font-bold tracking-wide transition-colors ${
                       currentPage === item.key
-                        ? 'bg-[#C0122A] text-white'
-                        : 'text-slate-200 hover:bg-white/5'
+                        ? 'bg-[#0877B5] text-white'
+                        : 'text-[#102A3A] hover:bg-[#D8EFFA]'
                     }`}
                   >
                     {item.name}
                   </a>
 
                   {item.hasChildren && (
-                    <div className="pl-4 pr-2 py-1 space-y-1 border-l border-[#0F3759] ml-4 my-1">
+                    <div className="pl-4 pr-2 py-1 space-y-1 border-l-2 border-[#0877B5] ml-4 my-1">
                       {item.children?.slice(1).map((child) => (
                         <a
                           key={child.key}
                           href={child.href}
                           onClick={(e) => handleLinkClick(e, child.key, child.href)}
                           className={`block py-2 text-xs font-semibold uppercase tracking-wider ${
-                            currentPage === child.key ? 'text-[#C0122A]' : 'text-slate-400 hover:text-white'
+                            currentPage === child.key ? 'text-[#D9043E]' : 'text-[#3B586F] hover:text-[#0877B5]'
                           }`}
                         >
                           {child.name}
@@ -267,14 +267,14 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
           </div>
 
-          <div className="pt-6 border-t border-white/10 space-y-3">
+          <div className="pt-6 border-t border-[#D8EFFA] space-y-3">
             <button
               id="mobile-drawer-contact-btn"
               onClick={() => {
                 setMobileMenuOpen(false);
                 if (onNavigate) onNavigate('contact');
               }}
-              className="w-full py-3.5 bg-[#C0122A] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 rounded-sm"
+              className="w-full py-3.5 bg-[#D9043E] text-white font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 rounded-sm shadow-md"
             >
               <span>GET IN TOUCH</span>
               <ArrowRightIcon size={14} />
@@ -283,18 +283,18 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="grid grid-cols-2 gap-2 text-xs">
               <a
                 href={`tel:${COMPANY_INFO.phoneRaw}`}
-                className="py-3 px-3 bg-[#031B2D] text-white font-semibold flex items-center justify-center gap-2 rounded-sm border border-[#0F3759]"
+                className="py-3 px-3 bg-white text-[#102A3A] font-semibold flex items-center justify-center gap-2 rounded-sm border border-[#D8EFFA]"
               >
-                <PhoneIcon size={14} color="#C0122A" />
+                <PhoneIcon size={14} color="#D9043E" />
                 <span>Call Us</span>
               </a>
               <a
                 href={COMPANY_INFO.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="py-3 px-3 bg-[#031B2D] text-[#25D366] font-semibold flex items-center justify-center gap-2 rounded-sm border border-[#0F3759]"
+                className="py-3 px-3 bg-white text-[#15803D] font-semibold flex items-center justify-center gap-2 rounded-sm border border-[#D8EFFA]"
               >
-                <WhatsappIcon size={14} color="#25D366" />
+                <WhatsappIcon size={14} color="#15803D" />
                 <span>WhatsApp</span>
               </a>
             </div>
