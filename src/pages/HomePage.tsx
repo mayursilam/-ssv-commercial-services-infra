@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Logo } from '../components/Logo';
 import { SafeImage } from '../components/SafeImage';
+import { ClientLogoShowcase } from '../components/ClientLogoShowcase';
 import { 
   ShieldIcon, CameraIcon, LockIcon, ScanIcon, BellIcon, FlameIcon, 
   SparklesIcon, BuildingIcon, DropletsIcon, TrashIcon, LeafIcon, SprayIcon, 
@@ -114,6 +115,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
         </div>
       </section>
+
+      {/* ========================================================
+          CLIENT LOGO SHOWCASE - ENTERPRISE PARTNERS MARQUEE
+          ======================================================== */}
+      <ClientLogoShowcase />
 
       {/* ========================================================
           SECTION 02 - EDITORIAL STATEMENT
