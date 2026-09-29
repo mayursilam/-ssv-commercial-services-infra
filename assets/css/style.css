@@ -3091,66 +3091,42 @@ button {
   }
 }
 
-@keyframes clientLogoMarquee {
-  0% {
+@keyframes ssvClientLogoMarquee {
+  from {
     transform: translate3d(0, 0, 0);
   }
-  100% {
+  to {
     transform: translate3d(-50%, 0, 0);
   }
 }
 
-@-webkit-keyframes clientLogoMarquee {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-  }
-}
-
 .marquee-track {
-  display: flex !important;
-  width: max-content !important;
-  flex: 0 0 auto !important;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
   align-items: center;
-  animation: clientLogoMarquee 30s linear infinite !important;
-  -webkit-animation: clientLogoMarquee 30s linear infinite !important;
-  animation-play-state: running !important;
+  flex: 0 0 auto;
+
+  animation-name: ssvClientLogoMarquee;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+
   will-change: transform;
-}
-
-@media (max-width: 1024px) {
-  .marquee-track {
-    animation-duration: 34s !important;
-    -webkit-animation-duration: 34s !important;
-  }
-}
-
-@media (max-width: 640px) {
-  .marquee-track {
-    animation-duration: 38s !important;
-    -webkit-animation-duration: 38s !important;
-  }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .marquee-viewport:hover .marquee-track,
-  .marquee-track:hover {
-    animation-play-state: paused !important;
-    -webkit-animation-play-state: paused !important;
-  }
+  transform: translate3d(0, 0, 0);
 }
 
 .marquee-sequence {
-  display: flex !important;
-  flex: 0 0 auto !important;
-  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
   flex-shrink: 0;
+  align-items: center;
   gap: 1.75rem;
   padding-right: 1.75rem;
 }
-
 
 @media (min-width: 640px) {
   .marquee-sequence {
@@ -3212,28 +3188,6 @@ button {
 .scale-client-05 { transform: scale(1.00); }
 .scale-client-06 { transform: scale(0.85); }
 .scale-client-07 { transform: scale(0.95); }
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee-track {
-    animation: none !important;
-    transform: none !important;
-    width: 100% !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 1.5rem !important;
-  }
-
-  .marquee-track > [aria-hidden="true"] {
-    display: none !important;
-  }
-
-  .marquee-sequence {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    padding-right: 0 !important;
-    gap: 1.5rem !important;
-  }
-}
 
 
 
