@@ -104,7 +104,7 @@ export const ClientLogoShowcase: React.FC = () => {
                   alt={logo.alt}
                   loading="eager"
                   decoding="async"
-                  className={`client-logo-img max-h-full max-w-full object-contain filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform-gpu ${logo.scaleClass}`}
+                  className={`client-logo-img max-h-full max-w-full object-contain transform-gpu ${logo.scaleClass}`}
                 />
               </div>
             ))}
@@ -125,7 +125,7 @@ export const ClientLogoShowcase: React.FC = () => {
                   alt=""
                   loading="eager"
                   decoding="async"
-                  className={`client-logo-img max-h-full max-w-full object-contain filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform-gpu ${logo.scaleClass}`}
+                  className={`client-logo-img max-h-full max-w-full object-contain transform-gpu ${logo.scaleClass}`}
                 />
               </div>
             ))}

@@ -3169,15 +3169,9 @@ button {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.75;
-  transition: all 0.3s ease;
-  transform-origin: center center;
-}
-
-.client-logo-wrapper:hover .client-logo-img {
-  filter: grayscale(0%);
+  filter: none;
   opacity: 1;
+  transform-origin: center center;
 }
 
 /* Optical Normalization Scale Classes */
